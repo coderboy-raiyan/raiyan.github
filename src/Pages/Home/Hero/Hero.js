@@ -7,6 +7,7 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 import { MdFindReplace, MdOutlineLocationOn } from "react-icons/md";
+import Typical from "react-typical";
 
 const Hero = () => {
   const [isOpend, setIsOpened] = useState(false);
@@ -38,7 +39,18 @@ const Hero = () => {
               Learning and finding jobs
             </h5>
             <h5 className="font-light text-gray-800 text-tighter  my-3">
-              Author of 44 ★️ javascript and React repo on GitHub
+              <Typical
+                steps={[
+                  "Hello, My gorgeous friends I'm Raiyan",
+                  1500,
+                  "I'm MERN Stack Developer",
+                  1500,
+                  "I'm Author",
+                  1500,
+                ]}
+                loop={Infinity}
+                wrapper="p"
+              />
             </h5>
             <h5 className="font-light text-gray-800 text-tighter  my-3">
               <MdOutlineLocationOn className="inline" /> Dhaka, Bangladesh
@@ -124,8 +136,18 @@ const Hero = () => {
           </div>
         </div>
         {/* Right Side hero */}
-        <div>
-          <h1>right</h1>
+        <div className="mt-6">
+          <p className="my-summary font-light p-3 leading-6">
+            Hi there! I'm Raiyan. I work as a full-time software engineer. In my
+            spare time I do open-sourcing (normally it is about 1-2 hours in the
+            morning before the work). Most of my open-source projects are
+            focused on one thing – to help people learn. You may use these
+            projects to learn about algorithms in JavaScript and get prepared
+            for technical interviews, or to learn Python syntax and start
+            experimenting with machine learning algorithms and math behind them,
+            etc. I also write articles about life, web-development and machine
+            learning.
+          </p>
         </div>
       </div>
     </section>

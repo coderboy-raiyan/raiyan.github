@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import About from "./Pages/Home/About/About";
+import Blogs from "./Pages/Blog/Blogs";
 import Home from "./Pages/Home/Home/Home";
-import Projects from "./Pages/Home/Projects/Projects";
+import Projects from "./Pages/Projects/Projects";
 import "./tailwind.css";
 
 const App = () => {
@@ -18,8 +18,8 @@ const App = () => {
         <Route path="/projects">
           <Projects></Projects>
         </Route>
-        <Route path="/about">
-          <About></About>
+        <Route path="/blogs">
+          <Blogs></Blogs>
         </Route>
       </Switch>
     </BrowserRouter>
