@@ -33,25 +33,22 @@ const SingalProject = ({ project }) => {
 
         {/* tags */}
         <ul className="flex flex-row flex-wrap justify-center lg:justify-start xl:justify-start">
-          <li className="hero-tags-li">
-            <span className="hero-tags">JavaScript</span>
-          </li>
-          <li className="hero-tags-li">
-            <span className="hero-tags">React</span>
-          </li>
-          <li className="hero-tags-li">
-            <span className="hero-tags">Node js</span>
-          </li>
-          {isOpend && (
-            <>
-              <li className="hero-tags-li">
-                <span className="hero-tags">Express js</span>
-              </li>
-              <li className="hero-tags-li">
-                <span className="hero-tags">Full Stack</span>
-              </li>
-            </>
-          )}
+          {isOpend
+            ? project?.technology.map((tech) => {
+                return (
+                  <li className="hero-tags-li">
+                    <span className="hero-tags">{tech}</span>
+                  </li>
+                );
+              })
+            : project?.technology.slice(0, 3).map((tech) => {
+                return (
+                  <li className="hero-tags-li">
+                    <span className="hero-tags">{tech}</span>
+                  </li>
+                );
+              })}
+
           <p
             className="inline cursor-pointer text-xs my-auto"
             onClick={handelClick}
