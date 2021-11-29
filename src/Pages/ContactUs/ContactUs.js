@@ -47,8 +47,9 @@ const ContactUs = () => {
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
               Contact Me
             </h1>
-            <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              We provide you 24/7 hr support
+            <p className="lg:w-1/3 mx-auto leading-relaxed text-base">
+              We are always here for you. You can contact us at anytime. We will
+              reply it as soon as possible
             </p>
           </div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
