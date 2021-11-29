@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { AiOutlineDownload } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import tw from "tailwind-styled-components";
 
@@ -42,6 +43,20 @@ const Header = () => {
             </li>
             <li>
               <button className="btn">Let's talk</button>
+            </li>
+            <li>
+              <button
+                type="submit"
+                className="btn"
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/u/0/uc?id=1IOpG6du8CIztxO2acpoJ1jJsPl325vNt&export=download"
+                  )
+                }
+              >
+                <AiOutlineDownload size={20} className="inline" /> Download
+                Resume
+              </button>
             </li>
           </ul>
 
