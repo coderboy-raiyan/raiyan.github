@@ -98,7 +98,7 @@ const Header = () => {
                     fontWeight: "text-base",
                     color: "red",
                   }}
-                  className="font-medium md:text-7xl"
+                  className="font-medium text-3xl md:text-7xl"
                   to="/home"
                   onClick={() => setIsClicked(!isClicked)}
                 >
@@ -111,7 +111,7 @@ const Header = () => {
                     fontWeight: "text-base",
                     color: "red",
                   }}
-                  className="text-gray-600 font-medium md:text-7xl"
+                  className="text-gray-600 text-3xl font-medium md:text-7xl"
                   to="/blogs"
                   onClick={() => setIsClicked(!isClicked)}
                 >
@@ -124,7 +124,7 @@ const Header = () => {
                     fontWeight: "text-base",
                     color: "red",
                   }}
-                  className="text-gray-600 font-medium md:text-7xl"
+                  className="text-gray-600 text-3xl font-medium md:text-7xl"
                   to="/Projects"
                   onClick={() => setIsClicked(!isClicked)}
                 >
@@ -137,7 +137,7 @@ const Header = () => {
                     fontWeight: "text-base",
                     color: "red",
                   }}
-                  className="text-gray-600 font-medium md:text-7xl"
+                  className="text-gray-600 text-3xl font-medium md:text-7xl"
                   to="/contactus"
                   onClick={() => setIsClicked(!isClicked)}
                 >
