@@ -8,6 +8,8 @@ import {
 } from "react-icons/bs";
 import { MdFindReplace, MdOutlineLocationOn } from "react-icons/md";
 import Slide from "react-reveal/Slide";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import Typical from "react-typical";
 
 const Hero = () => {
@@ -143,15 +145,25 @@ const Hero = () => {
         <div className="mt-6">
           <Slide right>
             <p className="my-summary font-light p-3 leading-7">
-              Hi there! I'm Raiyan. I work as a full-time software engineer. In
-              my spare time I do open-sourcing (normally it is about 1-2 hours
-              in the morning before the work). Most of my open-source projects
-              are focused on one thing – to help people learn. You may use these
-              projects to learn about algorithms in JavaScript and get prepared
-              for technical interviews, or to learn Python syntax and start
-              experimenting with machine learning algorithms and math behind
-              them, etc. I also write articles about life, web-development and
-              machine learning.
+              Hi there! I'm Raiyan. I work as a full-time junior web developer.
+              In my spare time, I do my projects{" "}
+              <i>(normally it is about 1-2 hours in the morning before work)</i>
+              . Most of my{" "}
+              <HashLink
+                smooth
+                className="font-semibold underline"
+                to="#homeprojects"
+              >
+                projects
+              </HashLink>{" "}
+              are focused on one thing – to improve my skills. You may see these
+              projects to know about my ambition and how I worked or learn
+              javascript syntax and start experimenting with web development and
+              math behind them, etc. I also write{" "}
+              <Link className="font-semibold underline" to="blogs ">
+                articles
+              </Link>{" "}
+              about life, web development, and some beautiful quotes.
             </p>
           </Slide>
         </div>

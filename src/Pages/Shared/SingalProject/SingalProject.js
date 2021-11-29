@@ -34,16 +34,16 @@ const SingalProject = ({ project }) => {
         {/* tags */}
         <ul className="flex flex-row flex-wrap justify-center lg:justify-start xl:justify-start">
           {isOpend
-            ? project?.technology.map((tech) => {
+            ? project?.technology.map((tech, index) => {
                 return (
-                  <li className="hero-tags-li">
+                  <li className="hero-tags-li" key={index}>
                     <span className="hero-tags">{tech}</span>
                   </li>
                 );
               })
-            : project?.technology.slice(0, 3).map((tech) => {
+            : project?.technology.slice(0, 3).map((tech, index) => {
                 return (
-                  <li className="hero-tags-li">
+                  <li className="hero-tags-li" key={index}>
                     <span className="hero-tags">{tech}</span>
                   </li>
                 );
