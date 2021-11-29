@@ -71,7 +71,7 @@ const SingalProject = ({ project }) => {
             href={project.client_side_code}
             target="_blank"
             rel="noreferrer"
-            className="btn text-xs p-2 lg:my-0"
+            className="btn text-xs p-2 lg:my-0 my-2"
           >
             <BsGithub className="inline " /> Client Side Code
           </a>

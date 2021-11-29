@@ -12,6 +12,14 @@ const Projects = () => {
           <h2 className="text-3xl font-semibold">PROJECTS</h2>
           <h5 className="text-sm">Total Stars : 147k</h5>
         </div>
+        <div>
+          <p>More projects are coming soon</p>
+          <img
+            src="https://i.ibb.co/wNpNgsd/Under-construction-rafiki.png"
+            alt=""
+            className="w-2/5 mx-auto"
+          />
+        </div>
       </section>
     </>
   );
