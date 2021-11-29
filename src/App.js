@@ -1,4 +1,5 @@
 import React from "react";
+import MessengerCustomerChat from "react-messenger-customer-chat";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Blogs from "./Pages/Blog/Blogs";
 import ContactUs from "./Pages/ContactUs/ContactUs";
@@ -33,6 +34,10 @@ const App = () => {
             <NotFound></NotFound>
           </Route>
         </Switch>
+        <MessengerCustomerChat
+          pageId={process.env.REACT_APP_PAGE_ID}
+          appId={process.env.REACT_APP_FAC_ID}
+        />
         <Footer />
       </BrowserRouter>
     </ProjectProvider>

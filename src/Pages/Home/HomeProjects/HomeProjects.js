@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 import Slide from "react-reveal/Slide";
+import { Link } from "react-router-dom";
 import SingalProject from "../../Shared/SingalProject/SingalProject";
 import useProjectContext from "./../../hooks/useProjectContext";
 import ProjectCardSke from "./../../Skelitons/ProjectCardSke";
@@ -26,9 +27,11 @@ const HomeProjects = () => {
         </div>
         {/* More projects button */}
         <div>
-          <button className="btn block mx-auto my-5">
-            Explore More <BsArrowRight className="inline" />
-          </button>
+          <Link to="/projects">
+            <button className="btn block mx-auto my-5">
+              Explore More <BsArrowRight className="inline" />
+            </button>
+          </Link>
         </div>
       </Slide>
     </section>
