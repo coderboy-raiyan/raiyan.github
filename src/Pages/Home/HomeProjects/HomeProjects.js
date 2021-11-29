@@ -10,7 +10,7 @@ const HomeProjects = () => {
 
   return (
     //   Home projects starts here
-    <section className="lg:max-w-6xl mx-4 lg:mx-auto py-11">
+    <section className="lg:max-w-6xl mx-4 lg:mx-auto py-11" id="homeprojects">
       <h1 className="text-4xl font-medium border-b-2 pb-3 mb-8">Projects</h1>
       {/* My home projects section starts */}
 
