@@ -9,7 +9,6 @@ const SingalProject = ({ project }) => {
     setIsOpened(!isOpend);
   };
 
-  console.log(project);
   return (
     <div className="shadow-lg h-full border-2 border-gray-200  rounded-lg overflow-hidden">
       <a href={project.live_link} target="_blank" rel="noreferrer" className="">

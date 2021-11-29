@@ -16,7 +16,11 @@ const Header = () => {
         <Wrapper>
           <Navbar>
             <div className="navbar-brand">
-              <Link className="text-4xl font-bold" to="/">
+              <Link
+                className="text-4xl font-bold"
+                to="/"
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 R.
               </Link>
             </div>
@@ -29,6 +33,7 @@ const Header = () => {
                   }}
                   className="font-medium "
                   to="/home"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Home
                 </NavLink>
@@ -41,6 +46,7 @@ const Header = () => {
                   }}
                   className="text-gray-600 font-medium"
                   to="/blogs"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Blog
                 </NavLink>
@@ -53,6 +59,7 @@ const Header = () => {
                   }}
                   className="text-gray-600 font-medium "
                   to="/projects"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Projects
                 </NavLink>
@@ -65,6 +72,7 @@ const Header = () => {
                   }}
                   className="text-gray-600 font-medium "
                   to="/contactus"
+                  onClick={() => window.scrollTo(0, 0)}
                 >
                   Contact us
                 </NavLink>
@@ -100,7 +108,10 @@ const Header = () => {
                   }}
                   className="font-medium text-3xl md:text-7xl"
                   to="/home"
-                  onClick={() => setIsClicked(!isClicked)}
+                  onClick={() => {
+                    setIsClicked(!isClicked);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   Home
                 </NavLink>
@@ -113,7 +124,10 @@ const Header = () => {
                   }}
                   className="text-gray-600 text-3xl font-medium md:text-7xl"
                   to="/blogs"
-                  onClick={() => setIsClicked(!isClicked)}
+                  onClick={() => {
+                    setIsClicked(!isClicked);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   Blog
                 </NavLink>
@@ -126,7 +140,10 @@ const Header = () => {
                   }}
                   className="text-gray-600 text-3xl font-medium md:text-7xl"
                   to="/Projects"
-                  onClick={() => setIsClicked(!isClicked)}
+                  onClick={() => {
+                    setIsClicked(!isClicked);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   Projects
                 </NavLink>
@@ -139,7 +156,10 @@ const Header = () => {
                   }}
                   className="text-gray-600 text-3xl font-medium md:text-7xl"
                   to="/contactus"
-                  onClick={() => setIsClicked(!isClicked)}
+                  onClick={() => {
+                    setIsClicked(!isClicked);
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   Contact me
                 </NavLink>

@@ -27,8 +27,8 @@ const HomeProjects = () => {
         </div>
         {/* More projects button */}
         <div>
-          <Link to="/projects">
-            <button className="btn block mx-auto my-5">
+          <Link to="/projects" onClick={() => window.scrollTo(0, 0)}>
+            <button className="btn block mx-auto my-8">
               Explore More <BsArrowRight className="inline" />
             </button>
           </Link>

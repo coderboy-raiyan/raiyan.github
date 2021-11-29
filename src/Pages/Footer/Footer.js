@@ -12,7 +12,11 @@ const Footer = () => {
       <div className="container mx-auto h-full">
         <div className="footer-inner flex justify-center lg:justify-between items-center flex-col lg:flex-row space-y-4">
           <div className="footer-brand lg:w-1/3">
-            <Link className="text-3xl font-bold text-white" to="/">
+            <Link
+              className="text-3xl font-bold text-white"
+              onClick={() => window.scrollTo(0, 0)}
+              to="/"
+            >
               R.
             </Link>
           </div>
