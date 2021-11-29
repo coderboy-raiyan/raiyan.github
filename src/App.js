@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Blogs from "./Pages/Blog/Blogs";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import ProjectProvider from "./Pages/context/ProjectProvider";
+import Footer from "./Pages/Footer/Footer";
 import Home from "./Pages/Home/Home/Home";
+import NotFound from "./Pages/NotFound/NotFound";
 import Projects from "./Pages/Projects/Projects";
 import "./tailwind.css";
 
@@ -27,7 +29,11 @@ const App = () => {
           <Route path="/contactus">
             <ContactUs></ContactUs>
           </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </ProjectProvider>
   );
