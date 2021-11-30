@@ -40,7 +40,7 @@ const ProjectDetails = () => {
                 {singalProject?.name}
               </h3>
               <p className="font-light lg:text-left text-center text-sm my-2">
-                Duration : Nov 23 - this month
+                Duration : {singalProject?.duration}
               </p>
             </div>
             {/* Links of codes */}

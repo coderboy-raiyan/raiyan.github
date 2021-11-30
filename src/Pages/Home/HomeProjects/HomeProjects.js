@@ -27,13 +27,15 @@ const HomeProjects = () => {
 
       <Slide right>
         <div className="grid lg:grid-cols-3 grid-col-1 gap-y-7 gap-x-5">
-          {allProjects.map((project, index) =>
-            isProjectLoaded ? (
-              <ProjectCardSke key={index} />
-            ) : (
-              <SingalProject key={index} project={project} />
-            )
-          )}
+          {allProjects
+            ?.slice(0, 3)
+            ?.map((project, index) =>
+              isProjectLoaded ? (
+                <ProjectCardSke key={index} />
+              ) : (
+                <SingalProject key={index} project={project} />
+              )
+            )}
         </div>
         {/* More projects button */}
         <div>

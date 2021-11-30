@@ -14,7 +14,7 @@ const SingalProject = ({ project }) => {
     <div className="shadow-lg h-full border-2 border-gray-200  rounded-lg overflow-hidden">
       <a href={project.live_link} target="_blank" rel="noreferrer" className="">
         <img
-          className="hover:scale-110 transition-all transform cursor-pointer"
+          className="hover:scale-110 transition-all transform cursor-pointer shadow"
           src={project.img}
           alt="blog"
         />
