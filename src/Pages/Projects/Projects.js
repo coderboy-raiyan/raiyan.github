@@ -15,7 +15,7 @@ const Projects = () => {
         <div className="flex justify-between items-end mb-20">
           <h2 className="text-3xl font-semibold relative">
             PROJECTS{" "}
-            <span className="absolute text-xs font-semibold text-gray-800 ml-2 font-light rounded px-1.5 bg-gray-300">
+            <span className="absolute text-xs font-semibold text-gray-800 ml-2 rounded px-1.5 bg-gray-300">
               {allProjects.length}
             </span>
           </h2>
