@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaPlay } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SingalProject = ({ project }) => {
   const [isOpend, setIsOpened] = useState(false);
@@ -21,8 +22,8 @@ const SingalProject = ({ project }) => {
       <div className="p-4">
         <div className="flex flex-col flex-grow">
           <div className="flex flex-col space-y-2 my-3">
-            <h2 className="tracking-widest text-lg text-gray-900 font-semibold">
-              {project.name}
+            <h2 className="tracking-widest text-lg text-gray-900 font-semibold hover:text-red-500">
+              <Link to={`/projectdetails/${project.id}`}>{project.name}</Link>
             </h2>
             <h1 className="text-xs  text-gray-900 ">{project.duration}</h1>
             <p className="leading-relaxed ">{project?.des?.slice(0, 60)}...</p>

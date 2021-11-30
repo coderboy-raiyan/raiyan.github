@@ -8,6 +8,7 @@ import Footer from "./Pages/Footer/Footer";
 import Home from "./Pages/Home/Home/Home";
 import NotFound from "./Pages/NotFound/NotFound";
 import PreLoader from "./Pages/PreLoader/PreLoader";
+import ProjectDetails from "./Pages/ProjectDetails/ProjectDetails";
 import Projects from "./Pages/Projects/Projects";
 import "./tailwind.css";
 
@@ -43,6 +44,9 @@ const App = () => {
               </Route>
               <Route path="/contactus">
                 <ContactUs></ContactUs>
+              </Route>
+              <Route path="/projectdetails/:projectId">
+                <ProjectDetails></ProjectDetails>
               </Route>
               <Route path="*">
                 <NotFound></NotFound>

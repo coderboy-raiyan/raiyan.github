@@ -35,7 +35,7 @@ const Header = () => {
                   to="/home"
                   onClick={() => window.scrollTo(0, 0)}
                 >
-                  Home
+                  About me
                 </NavLink>
               </li>
               <li>
