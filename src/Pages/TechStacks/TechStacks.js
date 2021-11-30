@@ -60,11 +60,11 @@ const TechStacks = () => {
         {/* tech header */}
         <div className="max-w-6xl mx-auto">
           <h1 className="font-light border-b-2 pb-3 mb-8 leading-3">
-            <span className="ml-2 lg:text-6xl text-4xl ">
+            <span className="ml-2 lg:text-6xl text-xl ">
               Tech I'm familiar with,
             </span>
             <br />{" "}
-            <span className="opacity-10 text-6xl lg:text-7xl font-bold -mt-10 block uppercase">
+            <span className="opacity-10 text-4xl lg:text-7xl font-bold -mt-10 block uppercase">
               Tech Stacks
             </span>
           </h1>

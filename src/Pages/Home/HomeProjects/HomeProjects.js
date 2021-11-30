@@ -14,11 +14,11 @@ const HomeProjects = () => {
     <section className="lg:max-w-6xl mx-4 lg:mx-auto py-11" id="homeprojects">
       <Slide left>
         <h1 className="font-light border-b-2 pb-3 mb-8 leading-3">
-          <span className="ml-2 tracking-wide text-3xl lg:text-6xl">
+          <span className="ml-2 tracking-wide text-2xl lg:text-6xl">
             I have Done,
           </span>
           <br />{" "}
-          <span className="opacity-10 lg:text-7xl text-6xl font-bold -mt-10 block uppercase">
+          <span className="opacity-10 lg:text-7xl text-4xl font-bold -mt-10 block uppercase">
             Projects
           </span>
         </h1>
