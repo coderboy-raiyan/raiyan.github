@@ -35,8 +35,8 @@ const ProjectDetails = () => {
             <h3 className="text-2xl font-bold lg:text-left text-center">
               {singalProject?.name}
             </h3>
-            <p className="font-light lg:text-left text-center text-sm">
-              Duration : Nov 23
+            <p className="font-light lg:text-left text-center text-sm my-2">
+              Duration : Nov 23 - this month
             </p>
           </div>
           {/* Links of codes */}
@@ -117,9 +117,41 @@ const ProjectDetails = () => {
                 </Swiper>
               </>
             </div>
+            {/*More details section */}
+            <div className="my-24">
+              <h1 className="text-4xl font-semibold opacity-20 text-center lg:text-left">
+                More Details
+              </h1>
 
+              <div>
+                <ul className="list-disc px-10 leading-10 mt-4 lg:text-lg md:w-full md:px-12 lg:w-full lg:px-0">
+                  {singalProject?.des
+                    ?.split(".")
+                    ?.slice(0, 5)
+                    ?.map((d, i) => {
+                      return (
+                        <li className="my-2" key={i}>
+                          {d}.
+                        </li>
+                      );
+                    })}
+                </ul>
+              </div>
+            </div>
+            {/* Buy me a coffee */}
             <div>
-              <h1>Project</h1>
+              <h1 className="text-center mt-12 mb-6 text-2xl">
+                If you like my work, you can{" "}
+                <a
+                  className="text-blue-500 font-semibold hover:underline"
+                  href="https://github.com/coderboy-raiyan"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  buy me a coffee
+                </a>{" "}
+                and share your thoughts 🎉☕
+              </h1>
             </div>
           </div>
         </div>
