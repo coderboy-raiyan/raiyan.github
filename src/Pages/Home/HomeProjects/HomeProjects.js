@@ -12,13 +12,17 @@ const HomeProjects = () => {
   return (
     //   Home projects starts here
     <section className="lg:max-w-6xl mx-4 lg:mx-auto py-11" id="homeprojects">
-      <h1 className="font-light border-b-2 pb-3 mb-8 leading-3">
-        <span className="ml-2 tracking-wide text-6xl">I have Done,</span>
-        <br />{" "}
-        <span className="opacity-10 text-7xl font-bold -mt-10 block">
-          Projects
-        </span>
-      </h1>
+      <Slide left>
+        <h1 className="font-light border-b-2 pb-3 mb-8 leading-3">
+          <span className="ml-2 tracking-wide text-3xl lg:text-6xl">
+            I have Done,
+          </span>
+          <br />{" "}
+          <span className="opacity-10 lg:text-7xl text-6xl font-bold -mt-10 block uppercase">
+            Projects
+          </span>
+        </h1>
+      </Slide>
       {/* My home projects section starts */}
 
       <Slide right>

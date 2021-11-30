@@ -113,7 +113,7 @@ const Header = () => {
                     window.scrollTo(0, 0);
                   }}
                 >
-                  Home
+                  About Me
                 </NavLink>
               </li>
               <li>
