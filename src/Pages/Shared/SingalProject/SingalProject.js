@@ -26,7 +26,15 @@ const SingalProject = ({ project }) => {
               <Link to={`/projectdetails/${project.id}`}>{project.name}</Link>
             </h2>
             <h1 className="text-xs  text-gray-900 ">{project.duration}</h1>
-            <p className="leading-relaxed ">{project?.des?.slice(0, 60)}...</p>
+            <p className="leading-relaxed ">
+              {project?.des?.slice(0, 60)}...{" "}
+              <Link
+                className="text-sm text-red-500 hover:underline"
+                to={`/projectdetails/${project.id}`}
+              >
+                More Details
+              </Link>{" "}
+            </p>
           </div>
         </div>
         {/* card footer */}
